@@ -1,0 +1,8 @@
+//mixin
+
+@mixin main-gral ($height, $overflow, $padding){
+    height: $height;
+    overflow: $overflow;
+    padding: $padding;
+}
+

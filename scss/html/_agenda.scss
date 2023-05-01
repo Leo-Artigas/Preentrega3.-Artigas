@@ -1,0 +1,33 @@
+
+
+/* estilos de agenda */
+
+.calendario{
+    text-align: center;
+    width: 400px;
+    .mes-año{
+        color: rgb(253, 254, 255);
+    }
+}
+
+div{
+    ol{
+        color: rgb(252, 253, 255);
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        padding: 0;
+        .first-day{
+            grid-column-start: 6;
+        }
+        .week-day{
+            background-color: rgb(141, 139, 139);
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}
+
+
+

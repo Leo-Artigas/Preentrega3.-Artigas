@@ -1,0 +1,35 @@
+//variables
+
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/maps";
+@import "../utilidades/extend";
+
+/* estilos generales*/
+
+.main-index{
+    @include main-gral (70vh, scroll, 10px);
+    .class-one{
+        text-shadow:$sh1 $sh2 $sh-color;
+    }
+}
+
+body{
+    background-color: map-get($bg-gral, bg-color );
+    background-image: map-get($bg-gral, bg-image);
+    background-blend-mode: map-get($bg-gral, bg-blend-mode);
+    background-repeat: map-get($bg-gral, bg-repeat );
+}
+
+.footer-fix {
+    @extend %fix
+}
+
+.main-contacto{
+    .wpp-logo{
+            @extend %fix
+        }
+}
+
+
+

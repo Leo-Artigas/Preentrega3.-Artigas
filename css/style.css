@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*etiquetas fix*/
+.footer-fix, .main-contacto .wpp-logo {
+  text-align: end;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px; }
+
+/* estilos generales*/
+.main-index {
+  height: 70vh;
+  overflow: scroll;
+  padding: 10px; }
+  .main-index .class-one {
+    text-shadow: 1px 1px #2a4836; }
+
+body {
+  background-color: #403f3f;
+  background-image: url(../img/porsche-background.jpg);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat; }
+
+/* aplicando transformacion a productos*/
+.img-uno:hover {
+  transform: scale(1.1); }
+
+/* estilos de agenda */
+.calendario {
+  text-align: center;
+  width: 400px; }
+  .calendario .mes-año {
+    color: #fdfeff; }
+
+div ol {
+  color: #fcfdff;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0; }
+  div ol .first-day {
+    grid-column-start: 6; }
+  div ol .week-day {
+    background-color: #8d8b8b;
+    color: black;
+    font-weight: bold;
+    text-align: center; }
+
+/*mq pantallas tablet*/
+@media screen and (min-width: 600px) {
+  .main-index {
+    height: 85vh;
+    overflow: visible; }
+  .main-contacto {
+    height: 1fr;
+    overflow: auto; }
+  .productos-display {
+    height: 80vh;
+    width: 100%;
+    overflow: scroll; } }
+
+/* mq pantallas computadora*/
+@media screen and (min-width: 1200px) {
+  .main-index {
+    height: 78vh;
+    overflow: hidden; } }

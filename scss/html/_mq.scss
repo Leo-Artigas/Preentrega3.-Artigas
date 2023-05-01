@@ -1,0 +1,28 @@
+/*mq pantallas tablet*/
+
+@media screen and (min-width:600px) {
+    .main-index {
+        height: 85vh;
+        overflow: visible;
+    }
+
+    .main-contacto {
+        height: 1fr;
+        overflow: auto;
+    }
+
+    .productos-display {
+        height: 80vh;
+        width: 100%;
+        overflow: scroll;
+    }
+}
+
+/* mq pantallas computadora*/
+
+@media screen and (min-width: 1200px) {
+    .main-index {
+        height: 78vh;
+        overflow: hidden;
+    }
+}
