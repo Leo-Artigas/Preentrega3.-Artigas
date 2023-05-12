@@ -8,7 +8,7 @@
 /* estilos generales*/
 
 .main-index{
-    @include main-gral (70vh, scroll, 10px);
+    @include main-gral (63vh, scroll, 10px);
     .class-one{
         text-shadow:$sh1 $sh2 $sh-color;
     }
@@ -22,14 +22,18 @@ body{
 }
 
 .footer-fix {
-    @extend %fix
+    @extend %fix;
 }
 
 .main-contacto{
     .wpp-logo{
-            @extend %fix
+            @extend %fix;
         }
 }
 
+.f-contact{
+    padding: 10px;
+
+}
 
 
