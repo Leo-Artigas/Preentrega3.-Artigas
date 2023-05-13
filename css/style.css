@@ -6,16 +6,15 @@
   box-sizing: border-box; }
 
 /*etiquetas fix*/
-.footer-fix, .main-contacto .wpp-logo {
+.footer-fix {
   text-align: end;
-  position: fixed;
   bottom: 0;
   right: 0;
-  padding: 10px; }
+  padding: 10px;
+  width: 100%; }
 
 /* estilos generales*/
 .main-index {
-  height: 63vh;
   overflow: scroll;
   padding: 10px; }
   .main-index .class-one {
@@ -27,8 +26,9 @@ body {
   background-blend-mode: overlay;
   background-repeat: no-repeat; }
 
-.f-contact {
-  padding: 10px; }
+.main-contacto .wpp-logo {
+  display: flex;
+  justify-content: end; }
 
 /* aplicando transformacion a productos*/
 .img-uno:hover {
@@ -36,10 +36,11 @@ body {
 
 /* estilos de agenda */
 .calendario {
-  text-align: center;
-  width: 320px; }
+  text-align: center; }
   .calendario .mes-año {
     color: #fdfeff; }
+  .calendario .w-cal {
+    width: 100%; }
 
 div ol {
   color: #fcfdff;
@@ -55,23 +56,46 @@ div ol {
     font-weight: bold;
     text-align: center; }
 
+@media screen and (min-width: 320px) {
+  .img-uno {
+    width: 280px; }
+  .productos-display {
+    /* height: 68vh;*/
+    overflow: scroll;
+    background-color: #839b6d; } }
+
 /*mq pantallas tablet*/
 @media screen and (min-width: 600px) {
   .main-index {
-    height: 85vh;
-    overflow: visible; }
-  .main-contacto {
-    height: 1fr;
-    overflow: auto; }
+    /*height: 67vh;*/
+    overflow: scroll;
+    background-color: pink; }
   .productos-display {
-    height: 80vh;
-    width: 100%;
-    overflow: scroll; }
-  .calendario {
-    width: 500px; } }
+    /* height: 70vh;*/
+    overflow: scroll;
+    background-color: #7aef0b; }
+  .footer-fix {
+    position: absolute; }
+  .f-son {
+    position: inherit; }
+  .f-agenda {
+    position: inherit; } }
+
+@media screen and (min-width: 768px) {
+  .f-agenda {
+    position: absolute; } }
 
 /* mq pantallas computadora*/
 @media screen and (min-width: 1200px) {
   .main-index {
-    height: 78vh;
-    overflow: hidden; } }
+    /*height: 84vh;*/
+    overflow: auto;
+    background-color: transparent; }
+  .productos-display {
+    /* height: 80vh;*/
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: unset;
+    background-color: cadetblue; }
+  .f-agenda {
+    position: absolute; } }

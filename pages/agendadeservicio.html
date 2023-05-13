@@ -45,54 +45,84 @@
         </div>
     </nav>
 
-    <main>
-        <div class="calendario">
-            <h2 class="mes-año">Abril 2023</h2>
-            <ol>
-                <li class="week-day">Lun</li>
-                <li class="week-day">Mar</li>
-                <li class="week-day">Mier</li>
-                <li class="week-day">Jue</li>
-                <li class="week-day">Vie</li>
-                <li class="week-day">Sab</li>
-                <li class="week-day">Dom</li>
+    <main class="main-index">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="calendario col-12 col-md-6">
+                    <h2 class="mes-año">Abril 2023</h2>
+                    <ol class="">
+                        <li class="week-day">Lun</li>
+                        <li class="week-day">Mar</li>
+                        <li class="week-day">Mier</li>
+                        <li class="week-day">Jue</li>
+                        <li class="week-day">Vie</li>
+                        <li class="week-day">Sab</li>
+                        <li class="week-day">Dom</li>
 
-                <li class="first-day">1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-                <li>7</li>
-                <li>8</li>
-                <li>9</li>
-                <li>10</li>
-                <li>11</li>
-                <li>12</li>
-                <li>13</li>
-                <li>14</li>
-                <li>15</li>
-                <li>16</li>
-                <li>17</li>
-                <li>18</li>
-                <li>19</li>
-                <li>20</li>
-                <li>21</li>
-                <li>22</li>
-                <li>23</li>
-                <li>24</li>
-                <li>25</li>
-                <li>26</li>
-                <li>27</li>
-                <li>28</li>
-                <li>29</li>
-                <li>30</li>
-            </ol>
+                        <li class="first-day">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                    </ol>
+                </div>
+                <div class="col-12 col-md-6">
+                    <form>
+                        <div class="form-group p-2">
+                            <label class="text-light" for="nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Juan">
+                        </div>
+                        <div class="form-group p-2">
+                            <label class="text-light" for="telefono">Teléfono</label>
+                            <input type="number" class="form-control" id="telefono" name="telefono"
+                                placeholder="000999888">
+                        </div>
+                        <div class="form-group p-2">
+                            <label class="text-light" for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="form-group p-2">
+                            <button class="btn btn-primary mb-2 ">Enviar</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
         </div>
+
+
+
+
 
     </main>
 
-    <footer class="text-light class-one footer-fix fs-4">
+    <footer class="text-light class-one footer-fix fs-4 bg-dark f-agenda">
         <p>
             Todos los derechos reservados
         </p>

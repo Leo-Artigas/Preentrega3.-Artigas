@@ -4,9 +4,11 @@
 
 .calendario{
     text-align: center;
-    width: 320px;
     .mes-año{
         color: rgb(253, 254, 255);
+    }
+    .w-cal{
+        width: 100%;
     }
 }
 
@@ -28,6 +30,8 @@ div{
         }
     }
 }
+
+
 
 
 

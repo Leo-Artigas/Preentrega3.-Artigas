@@ -1,7 +1,6 @@
 //mixin
 
-@mixin main-gral ($height, $overflow, $padding){
-    height: $height;
+@mixin main-gral ($overflow, $padding){
     overflow: $overflow;
     padding: $padding;
 }
