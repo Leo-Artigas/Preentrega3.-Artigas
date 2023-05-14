@@ -24,7 +24,8 @@ body {
   background-color: #403f3f;
   background-image: url(../img/porsche-background.jpg);
   background-blend-mode: overlay;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .main-contacto .wpp-logo {
   display: flex;
@@ -60,20 +61,14 @@ div ol {
   .img-uno {
     width: 280px; }
   .productos-display {
-    /* height: 68vh;*/
-    overflow: scroll;
-    background-color: #839b6d; } }
+    overflow: scroll; } }
 
 /*mq pantallas tablet*/
 @media screen and (min-width: 600px) {
   .main-index {
-    /*height: 67vh;*/
-    overflow: scroll;
-    background-color: pink; }
+    overflow: scroll; }
   .productos-display {
-    /* height: 70vh;*/
-    overflow: scroll;
-    background-color: #7aef0b; }
+    overflow: scroll; }
   .footer-fix {
     position: absolute; }
   .f-son {
@@ -88,14 +83,10 @@ div ol {
 /* mq pantallas computadora*/
 @media screen and (min-width: 1200px) {
   .main-index {
-    /*height: 84vh;*/
     overflow: auto;
     background-color: transparent; }
   .productos-display {
-    /* height: 80vh;*/
-    width: 100%;
     overflow-y: scroll;
-    overflow-x: unset;
-    background-color: cadetblue; }
+    overflow-x: unset; }
   .f-agenda {
     position: absolute; } }

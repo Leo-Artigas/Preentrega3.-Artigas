@@ -7,29 +7,29 @@
 
 /* estilos generales*/
 
-.main-index{
+.main-index {
     @include main-gral (scroll, 10px);
-    .class-one{
-        text-shadow:$sh1 $sh2 $sh-color;
+
+    .class-one {
+        text-shadow: $sh1 $sh2 $sh-color;
     }
 }
 
-body{
-    background-color: map-get($bg-gral, bg-color );
+body {
+    background-color: map-get($bg-gral, bg-color);
     background-image: map-get($bg-gral, bg-image);
     background-blend-mode: map-get($bg-gral, bg-blend-mode);
-    background-repeat: map-get($bg-gral, bg-repeat );
+    background-repeat: map-get($bg-gral, bg-repeat);
+    background-size: cover;
 }
 
 .footer-fix {
     @extend %fix;
 }
 
-.main-contacto{
-    .wpp-logo{
-            display: flex;
-            justify-content: end;
-        }
+.main-contacto {
+    .wpp-logo {
+        display: flex;
+        justify-content: end;
+    }
 }
-
-

@@ -4,9 +4,7 @@
     }
 
     .productos-display {
-       /* height: 68vh;*/
         overflow: scroll;
-        background-color: rgb(131, 155, 109);
     }
 }
 
@@ -14,31 +12,28 @@
 
 @media screen and (min-width:600px) {
     .main-index {
-        /*height: 67vh;*/
         overflow: scroll;
-        background-color: pink;
     }
 
     .productos-display {
-       /* height: 70vh;*/
         overflow: scroll;
-        background-color: rgb(122, 239, 11);
     }
 
-    .footer-fix{
+    .footer-fix {
         position: absolute;
     }
 
-    .f-son{
+    .f-son {
         position: inherit;
     }
 
-    .f-agenda{
+    .f-agenda {
         position: inherit;
     }
 }
-@media screen and (min-width:768px){
-    .f-agenda{
+
+@media screen and (min-width:768px) {
+    .f-agenda {
         position: absolute;
     }
 }
@@ -47,20 +42,16 @@
 
 @media screen and (min-width: 1200px) {
     .main-index {
-        /*height: 84vh;*/
         overflow: auto;
         background-color: transparent;
     }
 
     .productos-display {
-       /* height: 80vh;*/
-        width: 100%;
         overflow-y: scroll;
         overflow-x: unset;
-        background-color: cadetblue;
     }
 
-    .f-agenda{
+    .f-agenda {
         position: absolute;
     }
 }
