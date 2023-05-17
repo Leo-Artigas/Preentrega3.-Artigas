@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: 'M PLUS Rounded 1c', sans-serif; }
 
-/*etiquetas fix*/
 .footer-fix {
   text-align: end;
   bottom: 0;
@@ -93,7 +92,6 @@ div ol {
 
 @media screen and (min-width: 768px) {
   .f-agenda {
-    /*position: absolute;*/
     position: inherit; } }
 
 /* mq pantallas computadora*/
